@@ -1,10 +1,10 @@
-﻿int x = 0;
-for (int m = 89; m != 0; m /= 10)
+﻿int max = 0;
+for (int number = 89; number != 0; number /= 10)
 {
-  int r = m % 10;
-  if (r > x) x = r;
+  int remainder = number % 10;
+  if (remainder > max) max = remainder;
 }
-Console.WriteLine(x);
+Console.WriteLine(max);
 
 
 
